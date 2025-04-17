@@ -1,52 +1,35 @@
-# 🚀 Fine-Tuning DeepSeek-R1-Distill-Mistral-7B on Kaggle
+# 🚀 DeepSeek-R1-Distill_Mistral-7B-Instruct_on_Kaggle
 
-This notebook demonstrates how to fine-tune and run inference with **DeepSeek-R1-Distill-Qwen-7B** and **Mistral-7B-Instruct** models using Hugging Face's `transformers` library. It focuses on optimizing **large language models (LLMs)** for reasoning, instruction-following, and conversational AI.
 
----
+# 🏗️ Working with [DeepSeek-R1-Distill-Qwen-7B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B)
 
-## 🏗️ Model Overview
-- ✅ **DeepSeek-R1-Distill-Qwen-7B**: A distilled version of DeepSeek’s R1 model, optimized for **logical reasoning and long-context tasks** (supports **128k tokens**).
-- ✅ **Mistral-7B-Instruct**: Fine-tuned for **instruction-following** with strong **conversation and coding capabilities**.
+The **DeepSeek-R1-Distill-Qwen-7B** model is a distilled version of DeepSeek's R1 reasoning model, fine-tuned for **advanced reasoning and chain-of-thought tasks**. It supports a **128k token context length**, making it well-suited for complex text generation.
 
----
+## 🚀 **Key Features**
+- **🔍 Distilled Model:** Retains strong reasoning abilities from DeepSeek-R1 in a more compact form.
+- **📜 Extended Context Length:** Handles up to **128,000 tokens**, allowing for **better long-context understanding**.
+- **🧠 Optimized for Reasoning:** Fine-tuned for **structured thought processes** and **logical inference**.
 
-## 📥 Setup & Dependencies
-- Installs required libraries:  
+## 🛠️ **How to Use**
+### **📦 Install Dependencies**
+```bash
 pip install torch transformers accelerate
+```
 
+# 🏆 **Mistral-7B-Instruct-v0.3**  
+🚀 **[View on Hugging Face](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)**  
 
-- ✅ Configures **multi-GPU execution**.
-- ✅ Enables **float16 precision** for memory efficiency.
+## 📌 **Overview**  
+**Mistral-7B-Instruct-v0.3** is a **fine-tuned version** of Mistral-7B, optimized for **instruction-following tasks** and **chat-based interactions**. It builds upon Mistral-7B’s **efficient architecture**, delivering **high-quality reasoning and conversational abilities** while maintaining a **small model size (7B parameters)** for improved performance.
 
----
-
-## 🔄 Model Loading & Inference
-- ✅ Loads **pretrained models** from Hugging Face.
-- ✅ Uses **tokenizers** for text input processing.
-- ✅ Performs **inference with various prompts**, including **math problem-solving and reasoning tasks**.
-
----
-
-## 🎯 Fine-Tuning & Optimization
-- ✅ Fine-tunes the model on **Kaggle GPUs**.
-- ✅ Implements **gradient accumulation & mixed precision training**.
-- ✅ Uses **cached model storage** to optimize disk usage on Kaggle.
-
----
-
-## 📊 Evaluation & Output
-- ✅ **Runs inference** on structured reasoning tasks.
-- ✅ Displays **model-generated responses** for multiple prompts.
-
----
-
-## 💾 Cleanup & Resource Management
-- ✅ Clears GPU cache (`torch.cuda.empty_cache()`) to prevent memory overflow.
-- ✅ Deletes large variables after execution to optimize memory.
-
----
-
-## 🎯 Conclusion
-This notebook provides a **hands-on guide** to running **DeepSeek-R1-Distill-Qwen-7B** and **Mistral-7B-Instruct** models on Kaggle. The models are **efficient, powerful, and suitable for advanced NLP tasks**, including **reasoning, chat-based AI, and long-context understanding**.
-
-🚀 *Ideal for AI researchers and developers working on cutting-edge language model applications!*
+## ⚡ **Key Features**
+- **🧠 Strong Instruction-Following:** Optimized for handling a wide range of user queries, including **reasoning, coding, and knowledge-based tasks**.
+- **🔍 Enhanced Context Understanding:** Works well with **long-form text generation** while maintaining coherence.
+- **📏 Compact Yet Powerful (7B Parameters):** **Balances speed and performance**, making it a great alternative to larger models.
+- **🖥️ Efficient Execution:** Supports **multi-GPU execution** with **float16 precision for reduced memory usage**.
+  
+## 🛠 **How to Use**
+### **1️⃣ Install Dependencies**
+```bash
+pip install torch transformers accelerate
+```
